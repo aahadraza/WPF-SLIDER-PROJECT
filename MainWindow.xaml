@@ -1,0 +1,15 @@
+﻿<Window x:Class="SLIDER_DATABASE_IN_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLIDER_DATABASE_IN_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+            <Slider x:Name="AHADRAZA" Maximum="50"
+             TickPlacement="BottomRight" TickFrequency="2" IsSnapToTickEnabled="True" Value="15" ValueChanged="AHADRAZA_ValueChanged"  ></Slider>
+            <TextBlock x:Name="MYTEXTBLOCK" FontSize="{Binding Value, ElementName=AHADRAZA, UpdateSourceTrigger=PropertyChanged}" Margin="4,46,-4,-46"><Run Text="PROGRAMMING OFFICIAL SITE"/></TextBlock>
+    </Grid>
+</Window>
